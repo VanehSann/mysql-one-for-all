@@ -11,7 +11,7 @@ describe('Queries de seleção', () => {
     );
 
     try {
-      await importer.import('../desafio1.sql');
+      await importer.import('./desafio1.sql');
     }
     catch(error) {
       console.log('Erro ao restaurar o dump!');
@@ -66,7 +66,7 @@ describe('Queries de seleção', () => {
       return (pkCount > 1);
     };
 
-    it('Verifica os planos', async () => {
+    it.only('Verifica os planos', async () => {
       const {
         coluna_plano: planColumn,
         tabela_que_contem_plano: planTable,
