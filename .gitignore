@@ -1,5 +1,6 @@
 node_modules/
 ./history
+.history/
 
 # VSCode repo settings
 .vscode
