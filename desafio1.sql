@@ -4,7 +4,7 @@ CREATE DATABASE SpotifyClone;
 
 CREATE TABLE SpotifyClone.plans(
     plan_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    -- decimal(3,2) vi na thread
+    -- decimal(3,2) vi na thread da Regislane 19-B
     plan_price DECIMAL(3,2) NOT NULL,
     plan_name CHAR(20) NOT NULL
 ) engine = InnoDB;
