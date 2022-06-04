@@ -35,7 +35,7 @@ describe('Queries de seleção', () => {
   });
   
 
-  describe('1 - Normalize as tabelas para a 3ª Forma Normal', () => {
+  describe.only('1 - Normalize as tabelas para a 3ª Forma Normal', () => {
     const hasForeignKey = async (table, referencedTable) => {
       const [{ REFERENCE_COUNT: referenceCount }] = await sequelize.query(
         `SELECT COUNT(COLUMN_NAME) AS REFERENCE_COUNT
@@ -66,7 +66,7 @@ describe('Queries de seleção', () => {
       return (pkCount > 1);
     };
 
-    it.only('Verifica os planos', async () => {
+    it('Verifica os planos', async () => {
       const {
         coluna_plano: planColumn,
         tabela_que_contem_plano: planTable,
