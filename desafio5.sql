@@ -1,4 +1,4 @@
-select a.song_name as `cancoes`,
+select a.song_name as `cancao`,
 count(b.song_id) as `reproducoes`
 from songs as a
 inner join reproductions_history as b
