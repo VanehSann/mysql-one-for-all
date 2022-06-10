@@ -12,4 +12,5 @@ from songs as a
 inner join songs as b
 on a.song_id = b.song_id
 -- group by novo_nome
-having novo_nome != '';
+having novo_nome != ''
+order by novo_nome asc, nome_musica asc;
